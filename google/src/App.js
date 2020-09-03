@@ -13,7 +13,10 @@ function App() {
         <p>Annastasshia Ames</p>
       </header>
       <body>
+        <form>
+          <input type="text" placeholder="Search for Books..." autoComplete="off"/>
         <button>Search</button>
+        </form>
       </body>
     </div>
   );

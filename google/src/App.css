@@ -46,6 +46,13 @@ button {
   text-transform: uppercase;
 }
 
+input {
+  height: 50px;
+  width: 300px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
