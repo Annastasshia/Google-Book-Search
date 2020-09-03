@@ -4,9 +4,14 @@ import './App.css';
 
 function App() {
   
+  const [book,setBook] = useState("");
+  const [result,setResult] = useState([]);
+  const [apiKey,setApiKey] = useState("");
 
   function handleChange(event){
     console.log(this)
+    const book = event.target.value;
+    setBook(book);
   };
 
   function handleSubmit(event){
