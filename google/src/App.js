@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {useState}from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
+
+  function handleChange(event){
+    console.log(this)
+  };
+
+  function handleSubmit(event){
+    console.log("form submitted")
+
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,12 +23,12 @@ function App() {
         </h1>
         <p>Annastasshia Ames</p>
       </header>
-      <body>
-        <form>
-          <input type="text" placeholder="Search for Books..." autoComplete="off"/>
+      <div class="body">
+        <form onSubmit={handleSubmit}>
+          <input type="text" onChange= {handleChange} placeholder="Search for Books..." autoComplete="off"/>
         <button>Search</button>
         </form>
-      </body>
+      </div>
     </div>
   );
 }
